@@ -1,0 +1,57 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header and navigation */
+header {
+  background-color: #333;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #f4f4f4;
+  font-size: 1.1rem;
+}
+
+/* Main content */
+main {
+  padding: 2rem 0;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #f4f4f4;
+  padding: 1rem 0;
+  text-align: center;
+}
