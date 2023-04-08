@@ -45,10 +45,12 @@ nav li {
 nav a {
   color: #333;
   font-size: 1.1rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
 }
 
 nav a:hover {
-  color: #5c5c5c;
+  border-color: #333;
 }
 
 /* Main content */
@@ -65,7 +67,7 @@ section {
 #home {
   position: relative;
   height: 100vh;
-  background-image: url('background.jpg');
+  background-image: url('path/to/your/background-image.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -94,11 +96,6 @@ section {
 #home h2 {
   color: #fff;
   font-size: 2rem;
-}
-
-/* Projects */
-.project {
-  margin-bottom: 1.5rem;
 }
 
 /* Footer */
