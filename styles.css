@@ -61,16 +61,43 @@ main {
   padding-top: 100px;
 }
 
-section {
-  margin-bottom: 3rem;
-  padding: 2rem 0;
+.content-section {
+  padding: 4rem 0;
+}
+
+.content-section.alt {
+  background-color: #f9f9f9;
+}
+
+.section-header {
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.news-item {
+  flex: 0 1 calc(50% - 2rem);
+  display: flex;
+  align-items: center;
+}
+
+.news-item i {
+  font-size: 2rem;
+  margin-right: 1rem;
 }
 
 /* Home section */
 #home {
   position: relative;
   height: 100vh;
-  background-image: url('path/to/your/background-image.jpg');
+  background-image: url('background.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -103,13 +130,6 @@ section {
   font-weight: 300;
 }
 
-/* Section titles */
-section h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
 /* Footer */
 footer {
   background-color: #333;
@@ -130,9 +150,13 @@ footer {
 .social-icons a {
   color: #f4f4f4;
   margin: 0 0.5rem;
-  font-size: 1.5rem;
 }
 
-.social-icons a:hover {
-  color: #bfbfbf;
+.social-icons i {
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover i {
+  color: #f4f4f4;
 }

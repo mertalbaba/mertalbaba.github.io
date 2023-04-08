@@ -29,58 +29,86 @@
       </div>
     </section>
 
-    <section id="news">
-      <h2>News</h2>
-      <p>
-        // Add news items or updates related to your work here.
-      </p>
+    <section id="about" class="content-section">
+      <div class="section-header">
+        <h2>About Me</h2>
+      </div>
+      <div class="section-content">
+        <p>
+          // Write a brief introduction about yourself here.
+        </p>
+      </div>
     </section>
 
-    <section id="talks">
-      <h2>Talks</h2>
-      <p>
-        // List your talks or presentations here.
-      </p>
+    <section id="research" class="content-section alt">
+      <div class="section-header">
+        <h2>Research Interests</h2>
+      </div>
+      <div class="section-content">
+        <p>
+          // List your research interests here.
+        </p>
+      </div>
     </section>
 
-    <section id="publications">
-      <h2>Publications</h2>
-      <p>
-        // List your publications here.
-      </p>
+    <section id="news" class="content-section">
+      <div class="section-header">
+        <h2>News</h2>
+      </div>
+      <div class="section-content">
+        <div class="news-item">
+          <i class="fas fa-newspaper"></i>
+          <p>// Add news item here</p>
+        </div>
+        <div class="news-item">
+          <i class="fas fa-newspaper"></i>
+          <p>// Add news item here</p>
+        </div>
+        // Add more news items as necessary
+      </div>
     </section>
 
-    <section id="cv">
-      <h2>Curriculum Vitae</h2>
-      <p>
-        // Provide a brief overview of your CV or a link to download the full version.
-      </p>
+    <section id="talks" class="content-section alt">
+      <div class="section-header">
+        <h2>Talks</h2>
+      </div>
+      <div class="section-content">
+        <p>
+          // List your talks or presentations here.
+        </p>
+      </div>
+    </section>
+
+    <section id="publications" class="content-section">
+      <div class="section-header">
+        <h2>Publications</h2>
+      </div>
+      <div class="section-content">
+        <p>
+          // List your publications here.
+        </p>
+      </div>
+    </section>
+
+    <section id="cv" class="content-section alt">
+      <div class="section-header">
+        <h2>CV</h2>
+      </div>
+      <div class="section-content">
+        <p>
+          // Add a brief summary of your CV and a link to download the full version here.
+        </p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2023 Your Name. All rights reserved.</p>
+    <p>&copy; Your Name. All rights reserved.</p>
     <div class="social-icons">
       <a href="#"><i class="fab fa-linkedin"></i></a>
       <a href="#"><i class="fab fa-github"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
   </footer>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    // Smooth scrolling for navigation links
-    $('a[href*="#"]').on('click', function (e) {
-      e.preventDefault();
-
-      $('html, body').animate(
-        {
-          scrollTop: $($(this).attr('href')).offset().top,
-        },
-        500,
-        'linear'
-      );
-    });
-  </script>
 </body>
 </html>
