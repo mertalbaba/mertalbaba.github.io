@@ -9,7 +9,40 @@ body {
   font-family: 'Lato', sans-serif;
   line-height: 1.6;
   color: #333;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s;
 }
+
+/* Dark theme */
+body.dark-theme {
+  color: #f4f4f4;
+  background-color: #333;
+}
+
+body.dark-theme a {
+  color: #f4f4f4;
+}
+
+body.dark-theme a:hover {
+  color: #a6a6a6;
+}
+
+body.dark-theme header {
+  background-color: #222;
+}
+
+body.dark-theme .content-section.alt {
+  background-color: #444;
+}
+
+body.dark-theme footer {
+  background-color: #222;
+}
+
+body.dark-theme .news-item i {
+  color: #f4f4f4;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -22,56 +55,108 @@ ul {
 
 a {
   text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #5c5c5c;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header and navigation */
 header {
-  position: fixed;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
   padding: 1rem 0;
-  z-index: 1000;
+  text-align: center;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
+  gap: 1rem;
 }
 
-nav li {
-  margin: 0 1rem;
+.toggle-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
-nav a {
-  color: #333;
-  font-size: 1.1rem;
-  font-weight: 300;
-  padding-bottom: 3px;
-  transition: border-color 0.3s, color 0.3s;
-  border-bottom: 1px solid transparent;
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
-nav a:hover {
-  color: #5c5c5c;
-  border-color: #5c5c5c;
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
 /* Main content */
 main {
-  padding-top: 100px;
+  flex: 1;
+  padding: 2rem 0;
 }
 
 .content-section {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .content-section.alt {
   background-color: #f9f9f9;
-}
-
-.section-header {
-  max-width: 1200px;
-  margin: 0 auto 2rem auto;
 }
 
 .section-content {
@@ -82,81 +167,43 @@ main {
   gap: 2rem;
 }
 
+.column {
+  flex: 1;
+}
+
 .news-item {
-  flex: 0 1 calc(50% - 2rem);
   display: flex;
   align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .news-item i {
-  font-size: 2rem;
-  margin-right: 1rem;
-}
-
-/* Home section */
-#home {
-  position: relative;
-  height: 100vh;
-  background-image: url('background.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.overlay {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#home h1 {
-  color: #fff;
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
-#home h2 {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  color: #333;
 }
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: #f4f4f4;
   padding: 1rem 0;
+  background-color: #fff;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  transition: background-color 0.3s;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
+  gap: 1rem;
   margin-top: 1rem;
-}
-
-.social-icons a {
-  color: #f4f4f4;
-  margin: 0 0.5rem;
 }
 
 .social-icons i {
   font-size: 1.5rem;
+  color: #333;
   transition: color 0.3s;
 }
 
 .social-icons a:hover i {
-  color: #f4f4f4;
+  color: #5c5c5c;
 }

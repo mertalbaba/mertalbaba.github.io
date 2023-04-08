@@ -7,108 +7,102 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#talks">Talks</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#cv">CV</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Your Name</h1>
+      <p>PhD Student at ETH Zürich</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#talks">Talks</a></li>
+          <li><a href="#cv">CV</a></li>
+        </ul>
+      </nav>
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="toggleTheme">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
 
-  <main>
-    <section id="home">
-      <div class="overlay">
-        <h1>Your Name</h1>
-        <h2>PhD Student at ETH Zürich</h2>
-      </div>
-    </section>
-
-    <section id="about" class="content-section">
-      <div class="section-header">
-        <h2>About Me</h2>
-      </div>
-      <div class="section-content">
-        <p>
-          // Write a brief introduction about yourself here.
-        </p>
-      </div>
-    </section>
-
-    <section id="research" class="content-section alt">
-      <div class="section-header">
-        <h2>Research Interests</h2>
-      </div>
-      <div class="section-content">
-        <p>
-          // List your research interests here.
-        </p>
-      </div>
-    </section>
-
-    <section id="news" class="content-section">
-      <div class="section-header">
-        <h2>News</h2>
-      </div>
-      <div class="section-content">
-        <div class="news-item">
-          <i class="fas fa-newspaper"></i>
-          <p>// Add news item here</p>
+    <main>
+      <section id="about" class="content-section">
+        <h2>About</h2>
+        <div class="section-content">
+          <div class="column">
+            <h3>About Me</h3>
+            <p>
+              // Write a brief introduction about yourself here.
+            </p>
+          </div>
+          <div class="column">
+            <h3>Research Interests</h3>
+            <p>
+              // List your research interests here.
+            </p>
+          </div>
         </div>
-        <div class="news-item">
-          <i class="fas fa-newspaper"></i>
-          <p>// Add news item here</p>
-        </div>
-        // Add more news items as necessary
-      </div>
-    </section>
+      </section>
 
-    <section id="talks" class="content-section alt">
-      <div class="section-header">
-        <h2>Talks</h2>
-      </div>
-      <div class="section-content">
-        <p>
-          // List your talks or presentations here.
-        </p>
-      </div>
-    </section>
-
-    <section id="publications" class="content-section">
-      <div class="section-header">
+      <section id="publications" class="content-section alt">
         <h2>Publications</h2>
-      </div>
-      <div class="section-content">
-        <p>
-          // List your publications here.
-        </p>
-      </div>
-    </section>
+        <div class="section-content">
+          <p>
+            // List your publications here.
+          </p>
+        </div>
+      </section>
 
-    <section id="cv" class="content-section alt">
-      <div class="section-header">
+      <section id="news" class="content-section">
+        <h2>News</h2>
+        <div class="section-content">
+          <div class="news-item">
+            <i class="fas fa-newspaper"></i>
+            <p>// Add news item here</p>
+          </div>
+          <div class="news-item">
+            <i class="fas fa-newspaper"></i>
+            <p>// Add news item here</p>
+          </div>
+          // Add more news items as necessary
+        </div>
+      </section>
+
+      <section id="talks" class="content-section alt">
+        <h2>Talks</h2>
+        <div class="section-content">
+          <p>
+            // List your talks or presentations here.
+          </p>
+        </div>
+      </section>
+
+      <section id="cv" class="content-section">
         <h2>CV</h2>
-      </div>
-      <div class="section-content">
-        <p>
-          // Add a brief summary of your CV and a link to download the full version here.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; Your Name. All rights reserved.</p>
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
+          <div class="section-content">
+            <p>
+              // Add a brief summary of your CV and a link to download the full version here.
+            </p>
+          </div>
+        </section>
+      </main>
+  
+      <footer>
+        <p>&copy; Your Name. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </footer>
     </div>
-  </footer>
-</body>
-</html>
+  </body>
+  </html>
+  
