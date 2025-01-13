@@ -1,31 +1,31 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Mert Albaba",
+    "label": "PhD Student",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "mertalbaba@gmail.com",
+    "phone": "",
+    "url": "https://mertalbaba.github.io",
+    "summary": "A PhD Student creating methods to imitate human skills in a generative way using reinforcement learning and computer vision.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Rämistrasse 101",
+      "postalCode": "8092",
+      "city": "Zürich",
+      "countryCode": "CH",
+      "region": "Switzerland"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "X",
+        "username": "mertalbaba",
+        "url": "https://x.com/brtmertalb"
       }
     ]
   },
   "work": [
     {
       "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
+      "position": "PhD Student",
       "url": "https://example.com",
       "startDate": "1933-01-01",
       "endDate": "1955-01-01",
