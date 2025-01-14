@@ -20,6 +20,7 @@ I am a PhD student at [ETH Zürich](https://ethz.ch) and the [Max Planck Institu
 I previously spent a year at USC, earned my MSc in Mechanical Engineering at Bilkent University under the supervision of [Yildiray Yildiz](https://yildirayyildiz.com/about/), and completed my BSc in Electrical and Computer Engineering at Bilkent University.
 
 <br>
+<br>
 
 ## research
 My primary focus is on **generative imitation learning**: integrating ideas from **video diffusion models**, **imitation learning**, and **LLMs** to create methods that can accurately mimic human skills in a generative way. I’m particularly interested in **both** **realistic avatar animation** (e.g., character simulation) and **robotics**. Ultimately, I aim to enable humanoid agents —virtual or physical— to master a wide range of tasks by learning from just a handful of demonstrations or even from raw video data alone.
