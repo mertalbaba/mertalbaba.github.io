@@ -24,3 +24,6 @@ I previously spent a year at USC, earned my MSc in Mechanical Engineering at Bil
 My primary focus is on **generative imitation learning**: integrating ideas from **video diffusion models**, **imitation learning**, and **LLMs** to create methods that can accurately mimic human skills in a generative way. I’m particularly interested in **both** **realistic avatar animation** (e.g., character simulation) and **robotics**. Ultimately, I aim to enable humanoid agents —virtual or physical— to master a wide range of tasks by learning from just a handful of demonstrations or even from raw video data alone.
 
 In addition to my work in generative imitation learning, I have **five years** of experience applying **reinforcement learning** and **game theory** to model human behavior in autonomous driving. I remain strongly interested in multi-agent systems, where game-theoretic principles can enhance both **reinforcement** and **imitation learning**.
+
+<br>
+
