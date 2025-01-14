@@ -13,12 +13,10 @@ news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-<br>
-
 ## bio
 I am a PhD student at [ETH Zürich](https://ethz.ch) and the [Max Planck Institute – Perceiving Systems](https://ps.is.mpg.de/), co-advised by [Michael Black](https://ps.is.mpg.de/person/black), [Otmar Hilliges](https://ait.ethz.ch/people/hilliges) and [Andreas Krause](https://las.inf.ethz.ch/people/krausea/). My primary research interests span **imitation learning**, **diffusion models** and **VLMs**. I am especially excited about creating **generative methods** that enable machines to learn human skills from videos. I am an [ELLIS PhD Student](https://ellis.eu/phd-postdoc) and a [CLS Fellow](https://learning-systems.org/phds).
 
-I previously spent a year at USC, earned my MSc in Mechanical Engineering at Bilkent University under the supervision of [Yildiray Yildiz](https://yildirayyildiz.com/about/), and completed my BSc in Electrical and Computer Engineering at Bilkent University.
+I previously spent a year at USC, earned my MSc in Mechanical Engineering at Bilkent University under the supervision of [Yildiray Yildiz](https://yildirayyildiz.com/about/), and completed my BSc in Electrical and Computer Engineering at Bilkent University. <br>
 
 <br>
 
