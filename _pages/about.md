@@ -27,5 +27,7 @@ My primary focus is on **generative imitation learning**: integrating ideas from
 
 In addition to my work in generative imitation learning, I have **five years** of experience applying **reinforcement learning** and **game theory** to model human behavior in autonomous driving. I remain strongly interested in multi-agent systems, where game-theoretic principles can enhance both **reinforcement** and **imitation learning**.
 
+Building on my foundations, I am also interested in **LLM Reasoning**: combining ideas from **imitation learning**, **inverse reinforcement learning** and **human behavior modeling** to pioneer more effective approaches for RLHF.
+
 <br>
 
