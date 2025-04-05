@@ -18,6 +18,8 @@ I am a PhD student at [ETH Zürich](https://ethz.ch) and the [Max Planck Institu
 
 I previously spent a year at USC, earned my MSc in Mechanical Engineering at Bilkent University under the supervision of [Yildiray Yildiz](https://yildirayyildiz.com/about/), and completed my BSc in Electrical and Computer Engineering at Bilkent University. <br>
 
+[Download my CV](assets/pdf/CV.pdf)
+
 <br>
 
 ## research

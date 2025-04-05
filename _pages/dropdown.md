@@ -13,4 +13,7 @@ children:
   - title: divider
   - title: blog
     permalink: /blog/
+  - title: CV
+    url: /assets/pdf/CV.pdf
+    target: _blank
 ---
