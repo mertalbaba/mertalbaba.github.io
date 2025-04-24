@@ -52,11 +52,16 @@ ninja.data = [{
           window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
         
       },
-    },{id: "projects-",
-          title: '',
+    },{id: "projects-nil-no-data-imitation-leatning",
+          title: 'NIL - No-data Imitation Leatning',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_rile/";
+              window.location.href = "/projects/1_nil/";
+            },},{id: "projects-rile-reinforced-imitation-learning",
+          title: 'RILe - Reinforced Imitation Learning',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_rile/";
             },},{
         id: 'social-email',
         title: 'email',
