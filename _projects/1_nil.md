@@ -1,12 +1,19 @@
 ---
 layout: page
-title: NIL - No-data Imitation Leatning
+title: NIL - No-data Imitation Learning
 description:
 img: assets/img/publication_preview/NIL.jpg
 # importance: 1
 # category: work
 # related_publications: true
 ---
+
+<style>
+  .post-title {
+    text-align: center;
+    margin-top: -2rem;
+  }
+</style>
 
 <div class="row mt-3">
     <div class="col-md-8 offset-md-2 text-center">
@@ -27,7 +34,7 @@ img: assets/img/publication_preview/NIL.jpg
         </div>
     </div>
 </div>
-<hr> ```
+<hr>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

@@ -5,11 +5,12 @@ title: RILe - Reinforced Imitation Learning
 img: assets/img/publication_preview/RILe.jpg
 ---
 
-<div class="row mt-3">
-  <div class="col-12 text-center">
-    <h1>{{ page.title }}</h1>
-  </div>
-</div>
+<style>
+  .post-title {
+    text-align: center;
+    margin-top: -2rem;
+  }
+</style>
 
 <div class="row mt-3">
     <div class="col-md-8 offset-md-2 text-center">
@@ -30,7 +31,7 @@ img: assets/img/publication_preview/RILe.jpg
         </div>
     </div>
 </div>
-<hr> ```
+<hr>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -74,3 +75,13 @@ img: assets/img/publication_preview/RILe.jpg
     }</code></pre>
     </div>
 </section>
+
+
+
+
+---
+layout: page
+permalink: /routeformer/
+title: Leveraging Driver Field-of-View for Multimodal Ego-Trajectory Prediction
+nav: false
+---
