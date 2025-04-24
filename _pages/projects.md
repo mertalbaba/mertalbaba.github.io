@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: My PhD Research Projects
+description: selected research projects
 nav: true
 nav_order: 2
 display_categories: []

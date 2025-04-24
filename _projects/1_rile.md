@@ -1,6 +1,6 @@
 ---
 layout: page
-title: RILe: Reinforced Imitation Learning
+title: RILe &colon Reinforced Imitation Learning
 description:
 img: assets/img/publication_preview/RILe.jpg
 importance: 1
