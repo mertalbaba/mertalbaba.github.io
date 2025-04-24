@@ -150,8 +150,8 @@ collections:
     output: false
     permalink: /:collection/:title/
   projects:
-    output: false
-    permalink: /:collection/:title/
+    output: true
+    # permalink: /:collection/:title/
 
 announcements:
   enabled: true
@@ -209,7 +209,6 @@ exclude:
   - _pages/profiles.md
   - _pages/dropdown.md
   - _posts/
-  - _projects/?_project.md
   - assets/jupyter/blog.ipynb
 keep_files:
   - CNAME
