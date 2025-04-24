@@ -59,7 +59,7 @@ ninja.data = [{
               window.location.href = "/projects/1_nil/";
             },},{id: "projects-rile-reinforced-imitation-learning",
           title: 'RILe - Reinforced Imitation Learning',
-          description: "",
+          description: "Overview of the RILe project combining imitation and inverse reinforcement learning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_rile/";
             },},{
