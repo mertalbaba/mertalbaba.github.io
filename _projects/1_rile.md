@@ -2,7 +2,7 @@
 layout: page
 title: RILe: Reinforced Imitation Learning
 description:
-img: assets/RILe.jpg
+img: assets/img/publication_preview/RILe.jpg
 importance: 1
 category: work
 related_publications: true
