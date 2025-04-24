@@ -28,7 +28,7 @@ img: assets/img/publication_preview/NIL.jpg
             <sup>1</sup>ETH Zürich &nbsp;&nbsp; <sup>2</sup>Max Planck Institute - Intelligent Systems
         </div>
         <div class="links mt-3">
-            <a href="https://arxiv.org/abs/2406.08472" class="btn btn-dark" target="_blank">
+            <a href="https://arxiv.org/abs/2503.10626" class="btn btn-dark" target="_blank">
                 <i class="fas fa-file-pdf"></i> Paper
             </a>
         </div>
