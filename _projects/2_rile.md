@@ -6,6 +6,12 @@ img: assets/img/publication_preview/RILe.jpg
 ---
 
 <div class="row mt-3">
+  <div class="col-12 text-center">
+    <h1>{{ page.title }}</h1>
+  </div>
+</div>
+
+<div class="row mt-3">
     <div class="col-md-8 offset-md-2 text-center">
         <div class="authors"> <span class="author-block"><a>Mert Albaba</a><sup>1,2</sup>,</span>
             <span class="author-block"><a>Sammy Christen</a><sup>1</sup>,</span>
@@ -36,7 +42,7 @@ img: assets/img/publication_preview/RILe.jpg
 </div>
 
 <section class="section">
-    <div class="row"> <div class="col-lg-10 col-xl-8"> <h2 class="title is-3">Abstract</h2>
+    <div class="row"> <div class="col-md-12"> <h2 class="title is-3">Abstract</h2> 
             <div class="content"> <p>
                 Acquiring complex behaviors is essential for artificially intelligent agents, yet learning these behaviors in high-dimensional settings poses a significant challenge due to the vast search space. Traditional reinforcement learning (RL) requires extensive manual effort for reward function engineering. Inverse reinforcement learning (IRL) uncovers reward functions from expert demonstrations but relies on an iterative process that is often computationally expensive. Imitation learning (IL) provides a more efficient alternative by directly comparing an agent’s actions to expert demonstrations; however, in high-dimensional environments, such direct comparisons often offer insufficient feedback for effective learning. We introduce RILe (Reinforced Imitation Learning), a framework that combines the strengths of imitation learning and inverse reinforcement learning to learn a dense reward function efficiently and achieve strong performance in high-dimensional tasks. RILe employs a novel trainer–student framework: the trainer learns an adaptive reward function, and the student uses this reward signal to imitate expert behaviors. By dynamically adjusting its guidance as the student evolves, the trainer provides nuanced feedback across different phases of learning. Our framework produces high-performing policies in high-dimensional tasks where direct imitation fails to replicate complex behaviors. We validate RILe in challenging robotic locomotion tasks, demonstrating that it significantly outperforms existing methods and achieves near-expert performance across multiple settings.
                 </p>
