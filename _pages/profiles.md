@@ -26,3 +26,13 @@ profiles:
       <p>123 your address street</p>
       <p>Your City, State 12345</p>
 ---
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BNK4466BFB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BNK4466BFB');
+</script>
