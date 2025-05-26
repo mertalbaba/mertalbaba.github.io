@@ -77,11 +77,3 @@ img: assets/img/publication_preview/RILe.jpg
 </section>
 
 
-
-
----
-layout: page
-permalink: /routeformer/
-title: Leveraging Driver Field-of-View for Multimodal Ego-Trajectory Prediction
-nav: false
----
