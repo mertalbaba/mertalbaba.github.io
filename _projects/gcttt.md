@@ -1,6 +1,6 @@
 ---
 layout: page
-title: GC-TTT 
+title: GC-TTT - Test-time Offline Reinforcement Learning on Goal-related Experience
 # description: Overview of the RILe project combining imitation and inverse reinforcement learning.
 img: assets/img/publication_preview/GCTTT.png
 ---
@@ -14,12 +14,15 @@ img: assets/img/publication_preview/GCTTT.png
 
 <div class="row mt-3">
     <div class="col-md-8 offset-md-2 text-center">
-        <div class="authors"> 
-            <span class="author-block"><a>Marco Bagatella</a><sup>1,2</sup>,</span>
-            <span class="author-block"><a>Mert Albaba</a><sup>1, 2</sup>,</span>
+        <div class="authors">
+            <span class="author-block"><a>Marco Bagatella</a><sup>1,2$\ast$</sup>,</span>
+            <span class="author-block"><a>Mert Albaba</a><sup>1, 2$\ast$</sup>,</span>
             <span class="author-block"><a>Jonas Hübotter</a><sup>1</sup>,</span>
             <span class="author-block"><a>Georg Martius</a><sup>2,3</sup>,</span> <br/>
             <span class="author-block"><a>Andreas Krause</a><sup>1</sup>,</span>
+        </div>
+        <div class="equal-contribution-note mt-1">
+            $\ast$ Equal contribution.
         </div>
         <div class="affiliations mt-2">
             <sup>1</sup>ETH Zürich &nbsp;&nbsp; <sup>2</sup>Max Planck Institute - Intelligent Systems &nbsp;&nbsp; <sup>3</sup>University of Tübingen
