@@ -42,11 +42,8 @@ Here are some photos I've taken
         {% include figure.liquid path="assets/img/gallery/photos/9.jpeg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    A few of my favorite photos.
-</div>
 
-## Drawing
+## Drawings
 
 Here are some of my art creations
 
@@ -78,7 +75,4 @@ Here are some of my art creations
     <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/gallery/drawings/9.jpeg" class="img-fluid rounded z-depth-1" %}
     </div>
-</div>
-<div class="caption">
-    Some of my recent drawings.
 </div>
