@@ -15,8 +15,8 @@ img: assets/img/publication_preview/GCTTT.png
 <div class="row mt-3">
     <div class="col-md-8 offset-md-2 text-center">
         <div class="authors">
-            <span class="author-block"><a>Marco Bagatella</a><sup>1,2$\ast$</sup>,</span>
-            <span class="author-block"><a>Mert Albaba</a><sup>1, 2$\ast$</sup>,</span>
+            <span class="author-block"><a>Marco Bagatella</a><sup>1,2 &#42;</sup>,</span>
+            <span class="author-block"><a>Mert Albaba</a><sup>1, 2 &#42;</sup>,</span>
             <span class="author-block"><a>Jonas Hübotter</a><sup>1</sup>,</span>
             <span class="author-block"><a>Georg Martius</a><sup>2,3</sup>,</span> <br/>
             <span class="author-block"><a>Andreas Krause</a><sup>1</sup>,</span>

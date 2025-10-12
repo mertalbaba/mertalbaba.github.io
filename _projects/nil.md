@@ -17,7 +17,9 @@ img: assets/img/publication_preview/NIL.jpg
 
 <div class="row mt-3">
     <div class="col-md-8 offset-md-2 text-center">
-        <div class="authors"> <span class="author-block"><a>Mert Albaba</a><sup>1,2</sup>,</span>
+        <div class="post-title">NIL: No-data Imitation Learning by Leveraging Pre-trained Video Diffusion Models</div>
+        <div class="authors mt-3">
+            <span class="author-block"><a>Mert Albaba</a><sup>1,2</sup>,</span>
             <span class="author-block"><a>Chenhao Li</a><sup>1</sup>,</span>
             <span class="author-block"><a>Markos Diomataris</a><sup>1,2</sup>,</span>
             <span class="author-block"><a>Omid Taheri</a><sup>2</sup>,</span> <br/>
@@ -25,49 +27,143 @@ img: assets/img/publication_preview/NIL.jpg
             <span class="author-block"><a>Michael J. Black</a><sup>2</sup></span>
         </div>
         <div class="affiliations mt-2">
-            <sup>1</sup>ETH Zürich &nbsp;&nbsp; <sup>2</sup>Max Planck Institute - Intelligent Systems
+            <sup>1</sup>ETH Zürich &nbsp;&nbsp; <sup>2</sup>Max Planck Institute for Intelligent Systems
         </div>
         <div class="links mt-3">
-            <a href="https://arxiv.org/abs/2503.10626" class="btn btn-dark" target="_blank">
+            <a href="https://arxiv.org/abs/2503.10626" class="btn btn-dark" target="_blank" rel="noopener noreferrer">
                 <i class="fas fa-file-pdf"></i> Paper
             </a>
+            <a href="#video" class="btn btn-dark"> <i class="fas fa-video"></i> Video </a>
         </div>
     </div>
 </div>
 <hr>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/publication_preview/NILcopy.jpg" title="" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <h3 class="text-center" style="margin-bottom: 1rem;">We teach robots to move by showing them AI-generated videos, with no need for real-world motion data.</h3>
+        <div id="video">
+            <video controls preload="metadata" class="img-fluid rounded z-depth-1">
+                <source src="assets/videos/nil.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
-</div>
-<div class="caption">
-    <b>NIL Overview:</b> First, from a single frame and a textual prompt, a pre-trained video diffusion model generates a reference video. Reinforcement learning policies are then trained to imitate the generated video and control various robots without using any external data.
 </div>
 
 <section class="section">
-    <div class="row"> <div class="col-md-12"> <h2 class="title is-3">Abstract</h2>
-            <div class="content"> <p>
-            Acquiring physically plausible motor skills across diverse and unconventional morphologies—including humanoid robots, quadrupeds, and animals—is essential for advancing character simulation and robotics. Traditional methods, such as reinforcement learning (RL) are task- and body-specific, require extensive reward function engineering, and do not generalize well. Imitation learning offers an alternative but relies heavily on high-quality expert demonstrations, which are difficult to obtain for non-human morphologies. Video diffusion models, on the other hand, are capable of generating realistic videos of various morphologies, from humans to ants. Leveraging this capability, we propose a data-independent approach for skill acquisition that learns 3D motor skills from 2D-generated videos, with generalization capability to unconventional and non-human forms. Specifically, we guide the imitation learning process by leveraging vision transformers for video-based comparisons by calculating pair-wise distance between video embeddings. Along with video-encoding distance, we also use a computed similarity between segmented video frames as a guidance reward. We validate our method on locomotion tasks involving unique body configurations. In humanoid robot locomotion tasks, we demonstrate that ``No-data Imitation Learning" (NIL) outperforms baselines trained on 3D motion-capture data. Our results highlight the potential of leveraging generative video models for physically plausible skill learning with diverse morphologies, effectively replacing data collection with data generation for imitation learning.
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <h2 class="title is-3 text-center">Abstract</h2>
+            <div class="content">
+                <p>
+                Acquiring physically plausible motor skills across diverse and unconventional morphologies—including humanoid robots, quadrupeds, and animals—is essential for advancing character simulation and robotics. Traditional methods like reinforcement learning (RL) are task-specific and require extensive reward engineering. Imitation learning offers an alternative but relies on high-quality expert demonstrations, which are difficult to obtain for non-human morphologies. We propose <b>NIL (No-data Imitation Learning)</b>, a data-independent approach that learns 3D motor skills from 2D videos generated by pre-trained video diffusion models. We guide the learning process by calculating a reward based on the similarity between video embeddings from vision transformers and the Intersection over Union (IoU) of segmentation masks. We demonstrate that NIL outperforms baselines trained on 3D motion-capture data in humanoid locomotion tasks, effectively replacing data collection with data generation.
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/publication_preview/NIL_method.jpg" title="" class="img-fluid rounded z-depth-1" %}
+<hr>
+<section class="section">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <h2 class="title is-3 text-center">Method</h2>
+        </div>
     </div>
-</div>
-<div class="caption">
-    <b>NIL:</b> No-data Imitation Learning consists two stages. <i>Stage 1:</i> Render the agent’s initial frame, remove the background, and generate a reference video using a pre-trained video diffusion model conditioned on the initial frame and a textual task description. <i>Stage 2:</i> Train a reinforcement learning agent in a physical simulation to imitate the generated video via a reward function comprising (1) video encoding similarity, (2) segmentation mask IoU, and (3) regularization for smooth behavior.
-</div>
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            {% include figure.liquid loading="eager" path="assets/img/publication_preview/NIL_method.jpg" title="NIL Method" class="img-fluid rounded z-depth-1" %}
+        </div>
+        <div class="col-md-6">
+            <p>
+            <b>No-data Imitation Learning (NIL)</b> learns physically plausible 3D motor skills from 2D videos generated on-the-fly. The process has two stages:
+            </p>
+            <ul>
+                <li><b>Stage 1: Reference Video Generation.</b> Given an initial frame of the robot and a text prompt (e.g., "Robot is walking"), a pre-trained video diffusion model generates a reference video of the desired skill.</li>
+                <li><b>Stage 2: Policy Learning via Video Comparison.</b> A control policy is trained in a physical simulator. The reward function encourages the agent to mimic the generated video by measuring the similarity between the agent's rendered video and the reference video.</li>
+            </ul>
+            <p>This reward combines three key components:
+                <ol>
+                    <li><b>Video Encoding Similarity:</b> The L2 distance between video embeddings from a TimeSformer model.</li>
+                    <li><b>Segmentation Mask Similarity:</b> The Intersection over Union (IoU) between the agent's segmentation masks in both videos.</li>
+                    <li><b>Regularization:</b> Penalties on joint torques, velocities, and foot-sliding to ensure smooth, stable motion.</li>
+                </ol>
+            </p>
+        </div>
+    </div>
+</section>
 
+<hr>
+<section class="section">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <h2 class="title is-3 text-center">Results</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <h3 class="text-center">Comparison to Baselines</h3>
+            <p class="text-center">
+            NIL successfully learns locomotion for various robots, including humanoids and quadrupeds. Crucially, NIL achieves this without any expert motion data, yet it outperforms state-of-the-art methods that are trained on 25 curated 3D motion-capture demonstrations. Below, we compare NIL (trained on generated video) to AMP (trained on 3D MoCap data).
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-center">Unitree H1 Humanoid</h5>
+                    <video controls preload="metadata" class="img-fluid rounded z-depth-1">
+                        <source src="assets/videos/baseline_comparison_h1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="text-center">Unitree A1 Quadruped</h5>
+                    <video controls preload="metadata" class="img-fluid rounded z-depth-1">
+                        <source src="assets/videos/baseline_comparison_a1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-12">
+            <h3 class="text-center">Importance of Reward Components</h3>
+            <p class="text-center">
+            Our reward function combines video similarity, IoU similarity, and regularization. Removing any component degrades performance, leading to jittery, distorted, or suboptimal motion. Using all components together produces a stable and natural walking gait.
+            </p>
+            <video controls preload="metadata" class="img-fluid rounded z-depth-1">
+                <source src="assets/videos/reward_ablation.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-12">
+            <h3 class="text-center">Impact of Video Diffusion Models</h3>
+            <p class="text-center">
+            The performance of NIL is directly linked to the quality of the underlying video diffusion model. As these models improve, NIL's ability to learn complex and natural behaviors also improves, demonstrating a promising path for future progress.
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-center">Comparison of Different Models</h5>
+                    <video controls preload="metadata" class="img-fluid rounded z-depth-1">
+                        <source src="assets/videos/model_comparison.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="text-center">Effect of Model Improvements</h5>
+                    <video controls preload="metadata" class="img-fluid rounded z-depth-1">
+                        <source src="assets/videos/model_improvements.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr>
 <section class="section" id="BibTeX">
-    <div class="is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{albaba2025nilnodataimitationlearning,
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="title is-3 text-center">BibTeX</h2>
+            <pre><code>@misc{albaba2025nilnodataimitationlearning,
       title={NIL: No-data Imitation Learning by Leveraging Pre-trained Video Diffusion Models}, 
       author={Mert Albaba and Chenhao Li and Markos Diomataris and Omid Taheri and Andreas Krause and Michael Black},
       year={2025},
@@ -75,6 +171,7 @@ img: assets/img/publication_preview/NIL.jpg
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2503.10626}, 
-    }</code></pre>
+}</code></pre>
+        </div>
     </div>
 </section>
