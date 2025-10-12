@@ -1,6 +1,5 @@
-import * as THREE from 'three';
-
 function LiquidEther(container, options) {
+  // THREE is loaded globally from CDN
   const {
     mouseForce = 20,
     cursorSize = 100,
@@ -1043,4 +1042,7 @@ gl_Position = vec4(pos, 1.0);
   };
 }
 
-export default LiquidEther;
+// Make it available globally for non-module usage
+if (typeof window !== 'undefined') {
+  window.LiquidEther = LiquidEther;
+}

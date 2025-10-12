@@ -314,3 +314,30 @@
 {% if site.newsletter.enabled %}
   <script defer src="{{ '/assets/js/newsletter.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
+
+<!-- Liquid Ether Background Initialization -->
+<script src="{{ '/assets/js/liquid-ether.js' | relative_url | bust_file_cache }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const container = document.getElementById('liquid-ether-background');
+    if (container && typeof LiquidEther === 'function') {
+      LiquidEther(container, {
+        colors: ['#5227FF', '#FF9FFC', '#B19EEF'],
+        mouseForce: 20,
+        cursorSize: 100,
+        isViscous: false,
+        viscous: 30,
+        iterationsViscous: 32,
+        iterationsPoisson: 32,
+        resolution: 0.5,
+        isBounce: false,
+        autoDemo: true,
+        autoSpeed: 0.5,
+        autoIntensity: 2.2,
+        takeoverDuration: 0.25,
+        autoResumeDelay: 3000,
+        autoRampDuration: 0.6
+      });
+    }
+  });
+</script>
