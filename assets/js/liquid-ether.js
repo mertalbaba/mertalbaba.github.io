@@ -1,5 +1,5 @@
-function LiquidEther(container, options) {
-  // THREE is loaded globally from CDN
+function Galaxy(container, options) {
+  // OGL is loaded globally from CDN
   const {
     mouseForce = 20,
     cursorSize = 100,

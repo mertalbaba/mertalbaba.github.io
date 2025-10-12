@@ -314,3 +314,26 @@
 {% if site.newsletter.enabled %}
   <script defer src="{{ '/assets/js/newsletter.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
+
+<!-- Galaxy Background Initialization -->
+<script src="{{ '/assets/js/galaxy.js' | relative_url | bust_file_cache }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const container = document.getElementById('galaxy-background');
+    if (container && typeof Galaxy === 'function' && window.OGL) {
+      Galaxy(container, {
+        mouseInteraction: false,    // No mouse interaction
+        mouseRepulsion: false,       // No repulsion effect
+        rotationSpeed: 0.0,          // No rotation
+        hueShift: 140,               // Galaxy color theme
+        density: 1.0,                // Star density
+        glowIntensity: 0.3,          // Star glow
+        saturation: 0.0,             // Color saturation
+        twinkleIntensity: 0.3,       // Star twinkle effect
+        speed: 0.5,                  // Animation speed
+        starSpeed: 0.5,              // Star movement speed
+        transparent: false            // Transparent background
+      });
+    }
+  });
+</script>
