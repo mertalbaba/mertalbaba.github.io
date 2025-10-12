@@ -318,9 +318,29 @@
 <!-- Galaxy Background Initialization -->
 <script src="{{ '/assets/js/galaxy.js' | relative_url | bust_file_cache }}"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  // Wait for both DOM and OGL to load
+  function initGalaxy() {
     const container = document.getElementById('galaxy-background');
-    if (container && typeof Galaxy === 'function' && window.OGL) {
+    
+    if (!container) {
+      console.error('Galaxy container not found');
+      return;
+    }
+    
+    if (!window.OGL) {
+      console.error('OGL library not loaded. Retrying...');
+      setTimeout(initGalaxy, 100);
+      return;
+    }
+    
+    if (typeof Galaxy !== 'function') {
+      console.error('Galaxy function not found');
+      return;
+    }
+    
+    console.log('Initializing Galaxy background...');
+    
+    try {
       Galaxy(container, {
         mouseInteraction: false,    // No mouse interaction
         mouseRepulsion: false,       // No repulsion effect
@@ -330,10 +350,19 @@
         glowIntensity: 0.3,          // Star glow
         saturation: 0.0,             // Color saturation
         twinkleIntensity: 0.3,       // Star twinkle effect
-        speed: 0.5,                  // Animation speed
+        speed: 1.0,                  // Animation speed
         starSpeed: 0.5,              // Star movement speed
-        transparent: false            // Transparent background
+        transparent: true            // Transparent background
       });
+      console.log('Galaxy initialized successfully!');
+    } catch (e) {
+      console.error('Error initializing galaxy:', e);
     }
-  });
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initGalaxy);
+  } else {
+    initGalaxy();
+  }
 </script>

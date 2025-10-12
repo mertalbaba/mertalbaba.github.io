@@ -199,12 +199,16 @@ void main() {
   const smoothMouseActive = 0.0;
 
   function init() {
-    if (!window.OGL) {
-      console.error('OGL library not loaded');
+    // Check for OGL in different possible locations
+    const OGL = window.OGL || window.ogl || window;
+    
+    if (!OGL.Renderer) {
+      console.error('OGL library not loaded or Renderer not found');
+      console.log('Available on window:', Object.keys(window).filter(k => k.includes('OGL') || k.includes('ogl')));
       return;
     }
 
-    const { Renderer, Program, Mesh, Color, Triangle } = window.OGL;
+    const { Renderer, Program, Mesh, Color, Triangle } = OGL;
 
     renderer = new Renderer({
       alpha: transparent,
