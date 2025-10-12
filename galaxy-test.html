@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy Test</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      overflow: hidden;
+    }
+    #galaxy-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    #galaxy-background canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    #info {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+      background: rgba(0,0,0,0.8);
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+    }
+    .status {
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.1);
+    }
+    .success { background: rgba(0,255,0,0.2); }
+    .error { background: rgba(255,0,0,0.2); }
+  </style>
+</head>
+<body>
+  <div id="galaxy-background"></div>
+  
+  <div id="info">
+    <h2>🌌 Galaxy Test Page</h2>
+    <div id="status">
+      <div class="status">Checking OGL...</div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/ogl@1.0.6/dist/ogl.umd.js"></script>
+  <script src="./assets/js/galaxy.js"></script>
+  <script>
+    const statusDiv = document.getElementById('status');
+    
+    function addStatus(message, type = '') {
+      const div = document.createElement('div');
+      div.className = `status ${type}`;
+      div.textContent = message;
+      statusDiv.appendChild(div);
+      console.log(message);
+    }
+    
+    function initGalaxy() {
+      addStatus('DOM loaded');
+      
+      if (!window.OGL) {
+        addStatus('❌ OGL not loaded', 'error');
+        addStatus('Retrying in 100ms...');
+        setTimeout(initGalaxy, 100);
+        return;
+      }
+      
+      addStatus('✅ OGL loaded', 'success');
+      addStatus(`OGL has: ${Object.keys(window.OGL).join(', ')}`);
+      
+      if (typeof Galaxy !== 'function') {
+        addStatus('❌ Galaxy function not found', 'error');
+        return;
+      }
+      
+      addStatus('✅ Galaxy function loaded', 'success');
+      
+      const container = document.getElementById('galaxy-background');
+      if (!container) {
+        addStatus('❌ Container not found', 'error');
+        return;
+      }
+      
+      addStatus('✅ Container found', 'success');
+      
+      try {
+        addStatus('Initializing galaxy...');
+        
+        Galaxy(container, {
+          mouseInteraction: false,
+          mouseRepulsion: false,
+          rotationSpeed: 0.0,
+          hueShift: 140,
+          density: 1.0,
+          glowIntensity: 0.5,
+          saturation: 0.2,
+          twinkleIntensity: 0.3,
+          speed: 1.0,
+          starSpeed: 0.5,
+          transparent: false
+        });
+        
+        addStatus('✅ Galaxy initialized!', 'success');
+        addStatus('If you see stars, it\'s working! 🌟');
+        
+        // Hide status after 5 seconds if successful
+        setTimeout(() => {
+          document.getElementById('info').style.opacity = '0';
+          document.getElementById('info').style.transition = 'opacity 1s';
+        }, 5000);
+        
+      } catch (e) {
+        addStatus(`❌ Error: ${e.message}`, 'error');
+        console.error('Full error:', e);
+      }
+    }
+    
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initGalaxy);
+    } else {
+      initGalaxy();
+    }
+  </script>
+</body>
+</html>
