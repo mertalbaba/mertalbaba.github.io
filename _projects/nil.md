@@ -42,9 +42,8 @@ img: assets/img/publication_preview/NIL.jpg
     <div class="col-md-10">
         <h3 class="text-center" style="margin-bottom: 1rem;">We teach robots to move by showing them AI-generated videos, with no need for real-world motion data.</h3>
         <div id="video">
-            {% assign video_path = "assets/video/nil.mp4" | relative_url %}
             <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                <source src="{{ video_path }}" type="video/mp4">
+                <source src="/assets/video/nil.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -112,16 +111,14 @@ img: assets/img/publication_preview/NIL.jpg
             <div class="row">
                 <div class="col-md-10">
                     <h5 class="text-center">Unitree H1 Humanoid and Unitree A1 Quadruped</h5>
-                    {% assign video_path = "assets/video/results1.mp4" | relative_url %}
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="{{ video_path }}" type="video/mp4">
+                        <source src="/assets/video/results1.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="col-md-10 mt-4">
                     <h5 class="text-center">Unitree H1 Humanoid and Talos Humanoid</h5>
-                    {% assign video_path2 = "assets/video/results2.mp4" | relative_url %}
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="{{ video_path2 }}" type="video/mp4">
+                        <source src="/assets/video/results2.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -133,9 +130,8 @@ img: assets/img/publication_preview/NIL.jpg
             <p class="text-center">
             Our reward function combines video similarity, IoU similarity, and regularization. Removing any component degrades performance, leading to jittery, distorted, or suboptimal motion. Using all components together produces a stable and natural walking gait.
             </p>
-            {% assign video_path3 = "assets/video/rewardfunctioncomps.mp4" | relative_url %}
             <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                <source src="{{ video_path3 }}" type="video/mp4">
+                <source src="/assets/video/rewardfunctioncomps.mp4" type="video/mp4">
             </video>
         </div>
     </div>
@@ -148,16 +144,14 @@ img: assets/img/publication_preview/NIL.jpg
             <div class="row">
                 <div class="col-md-10">
                     <h5 class="text-center">Comparison of Different Models</h5>
-                    {% assign video_path4 = "assets/video/videomodels.mp4" | relative_url %}
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="{{ video_path4 }}" type="video/mp4">
+                        <source src="/assets/video/videomodels.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="col-md-10 mt-4">
                     <h5 class="text-center">Effect of Model Improvements</h5>
-                    {% assign video_path5 = "assets/video/videomodelimprovements.mp4" | relative_url %}
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="{{ video_path5 }}" type="video/mp4">
+                        <source src="/assets/video/videomodelimprovements.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
