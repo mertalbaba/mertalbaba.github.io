@@ -104,19 +104,19 @@ img: assets/img/publication_preview/NIL.jpg
         </div>
     </div>
     <div class="row justify-content-center">
-        <div class="col-md-12">
+        <div class="col-md-10">
             <h3 class="text-center">Comparison to Baselines</h3>
             <p class="text-center">
             NIL successfully learns locomotion for various robots, including humanoids and quadrupeds. Crucially, NIL achieves this without any expert motion data, yet it outperforms state-of-the-art methods that are trained on 25 curated 3D motion-capture demonstrations. Below, we compare NIL (trained on generated video) to AMP (trained on 3D MoCap data).
             </p>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-10">
                     <h5 class="text-center">Unitree H1 Humanoid and Unitree A1 Quadruped</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
                         <source src="../assets/video/results1.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="col-md-12 mt-4">
+                <div class="col-md-10 mt-4">
                     <h5 class="text-center">Unitree H1 Humanoid and Talos Humanoid</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
                         <source src="../assets/video/results2.mp4" type="video/mp4">
@@ -126,7 +126,7 @@ img: assets/img/publication_preview/NIL.jpg
         </div>
     </div>
     <div class="row justify-content-center mt-5">
-        <div class="col-md-12">
+        <div class="col-md-10">
             <h3 class="text-center">Importance of Reward Components</h3>
             <p class="text-center">
             Our reward function combines video similarity, IoU similarity, and regularization. Removing any component degrades performance, leading to jittery, distorted, or suboptimal motion. Using all components together produces a stable and natural walking gait.
@@ -137,19 +137,19 @@ img: assets/img/publication_preview/NIL.jpg
         </div>
     </div>
     <div class="row justify-content-center mt-5">
-        <div class="col-md-12">
+        <div class="col-md-10">
             <h3 class="text-center">Impact of Video Diffusion Models</h3>
             <p class="text-center">
             The performance of NIL is directly linked to the quality of the underlying video diffusion model. As these models improve, NIL's ability to learn complex and natural behaviors also improves, demonstrating a promising path for future progress.
             </p>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-10">
                     <h5 class="text-center">Comparison of Different Models</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
                         <source src="../assets/video/videomodels.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="col-md-12 mt-4">
+                <div class="col-md-10 mt-4">
                     <h5 class="text-center">Effect of Model Improvements</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
                         <source src="../assets/video/videomodelimprovements.mp4" type="video/mp4">
