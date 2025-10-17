@@ -17,7 +17,6 @@ img: assets/img/publication_preview/NIL.jpg
 
 <div class="row mt-3">
     <div class="col-md-8 offset-md-2 text-center">
-        <div class="post-title">NIL: No-data Imitation Learning by Leveraging Pre-trained Video Diffusion Models</div>
         <div class="authors mt-3">
             <span class="author-block"><a>Mert Albaba</a><sup>1,2</sup>,</span>
             <span class="author-block"><a>Chenhao Li</a><sup>1</sup>,</span>
@@ -44,7 +43,7 @@ img: assets/img/publication_preview/NIL.jpg
         <h3 class="text-center" style="margin-bottom: 1rem;">We teach robots to move by showing them AI-generated videos, with no need for real-world motion data.</h3>
         <div id="video">
             <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                <source src="../assets/video/nil.mp4#t=0.1" type="video/mp4">
+                <source src="assets/video/nil.mp4#t=0.1" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -113,13 +112,13 @@ img: assets/img/publication_preview/NIL.jpg
                 <div class="col-md-10">
                     <h5 class="text-center">Unitree H1 Humanoid and Unitree A1 Quadruped</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="../assets/video/results1.mp4#t=0.1" type="video/mp4">
+                        <source src="assets/video/results1.mp4#t=0.1" type="video/mp4">
                     </video>
                 </div>
                 <div class="col-md-10 mt-4">
                     <h5 class="text-center">Unitree H1 Humanoid and Talos Humanoid</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="../assets/video/results2.mp4#t=0.1" type="video/mp4">
+                        <source src="assets/video/results2.mp4#t=0.1" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -132,7 +131,7 @@ img: assets/img/publication_preview/NIL.jpg
             Our reward function combines video similarity, IoU similarity, and regularization. Removing any component degrades performance, leading to jittery, distorted, or suboptimal motion. Using all components together produces a stable and natural walking gait.
             </p>
             <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                <source src="../assets/video/rewardfunctioncomps.mp4#t=0.1" type="video/mp4">
+                <source src="assets/video/rewardfunctioncomps.mp4#t=0.1" type="video/mp4">
             </video>
         </div>
     </div>
@@ -146,13 +145,13 @@ img: assets/img/publication_preview/NIL.jpg
                 <div class="col-md-10">
                     <h5 class="text-center">Comparison of Different Models</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="../assets/video/videomodels.mp4#t=0.1" type="video/mp4">
+                        <source src="assets/video/videomodels.mp4#t=0.1" type="video/mp4">
                     </video>
                 </div>
                 <div class="col-md-10 mt-4">
                     <h5 class="text-center">Effect of Model Improvements</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="../assets/video/videomodelimprovements.mp4#t=0.1" type="video/mp4">
+                        <source src="assets/video/videomodelimprovements.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
