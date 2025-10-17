@@ -64,7 +64,6 @@ img: assets/img/publication_preview/RILe.jpg
                 We propose <b>Reinforced Imitation Learning (RILe)</b> to jointly learn a reward function and a policy that emulates expert-like behavior within a single learning process. RILe introduces a novel trainer-student dynamic, as illustrated in Figure 2. The student agent learns an action policy by interacting with the environment, while the trainer agent learns a reward function to guide the student. Both agents are trained simultaneously using reinforcement learning, with feedback from an adversarial discriminator.
                 </p>
             </div>
-            
             <div class="row">
                 <div class="col-sm mt-3 mt-md-0">
                     {% include figure.liquid loading="eager" path="assets/img/publication_preview/RILecopy.jpg" title="RILe Framework" class="img-fluid rounded z-depth-1" %}
@@ -96,7 +95,6 @@ img: assets/img/publication_preview/RILe.jpg
                 We evaluated RILe across several studies, including comparisons of computational cost, reward function dynamics, and performance on high-dimensional continuous control tasks.
                 </p>
             </div>
-            
             <h3 class="mt-3">Performance in Continuous Control Tasks</h3>
             <p>
                 We evaluated RILe on two sets of continuous control benchmarks. First, on standard MuJoCo tasks, RILe achieves the highest final reward in three of the four environments, particularly showing an advantage in the high-dimensional Humanoid task. Second, on a more challenging high-dimensional robotic locomotion benchmark (LocoMujoco) that uses noisy, state-only data, RILe obtains the highest score across all seven tasks.
@@ -109,7 +107,6 @@ img: assets/img/publication_preview/RILe.jpg
             <div class="caption">
                 <b>Table 1: Performance in Continuous Control Tasks.</b> Scores are averaged over test seeds. (a) On standard MuJoCo benchmarks, RILe is competitive and excels in the high-dimensional Humanoid task. (b) On the more challenging LocoMujoco benchmark, RILe outperforms all baselines across all tasks.
             </div>
-
             <h3 class="mt-4">Reward Function Evaluation</h3>
             <p>
                 To understand how RILe's reward-learning differs from baselines, we visualized the learned reward functions in a maze environment. Figure 4 shows that RILe's reward function dynamically adapts to the student's current policy, providing context-sensitive guidance that changes as the student improves. In contrast, the reward functions of GAIL and AIRL (which are tied directly to the discriminator output) remain relatively static throughout training.
@@ -122,7 +119,6 @@ img: assets/img/publication_preview/RILe.jpg
             <div class="caption">
                 <b>Figure 4: Reward Function Comparison.</b> Evolution of reward functions during training for (a) RILe, (b) GAIL, and (c) AIRL in a maze environment. Columns show reward landscapes at 25%, 50%, 75%, and 100% of training. The expert's trajectory is in black, and the student's is in white. RILe's reward landscape (a) clearly adapts over time to guide the student.
             </div>
-
             <h3 class="mt-4">Computational Cost and Performance Trade-offs</h3>
             <p>
                 We compared RILe's computational cost against AIL (GAIL) and IRL (GCL, REIRL) methods. As shown in Figure 5, GAIL is computationally efficient but achieves limited peak performance, especially in complex tasks. Conversely, IRL methods achieve high rewards but require orders of magnitude more gradient steps. RILe successfully bridges this gap, achieving the high performance characteristic of IRL while maintaining sample efficiency much closer to that of AIL.
@@ -135,7 +131,6 @@ img: assets/img/publication_preview/RILe.jpg
             <div class="caption">
                 <b>Figure 5: Comparison of Computational Cost.</b> Evaluation of computational cost (gradient steps) versus performance (episode reward) for RILE, GAIL, GCL, and REIRL across four MuJoCo Playground tasks. RILe (blue) achieves high rewards similar to IRL methods (green, red) but with the efficiency of AIL (orange).
             </div>
-
             <h3 class="mt-4">Impact of Advanced Discriminators</h3>
             <p>
                 The quality of the discriminator is critical. We analyzed this by replacing the standard discriminator in both RILe and GAIL with a more advanced diffusion-based model (from DRAIL). As shown in Figure 6, RILe (orange) effectively leverages the advanced discriminator (red) to improve its final performance. In contrast, GAIL's performance remains stable, suggesting it cannot capitalize on the better feedback. Furthermore, RILe's reward signal (CPR, plot c) maintains a positive correlation with true task performance, while GAIL's reward signal eventually becomes misaligned (negative correlation).
