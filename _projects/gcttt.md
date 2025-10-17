@@ -25,7 +25,7 @@ img: assets/img/publication_preview/GCTTT.png
             $\ast$ Equal contribution.
         </div>
         <div class="affiliations mt-2">
-            <sup>1</sup>ETH Zürich &nbsp;&nbsp; S<sup>2</sup>Max Planck Institute - Intelligent Systems &nbsp;&nbsp; <sup>3</sup>University of Tübingen
+            <sup>1</sup>ETH Zürich &nbsp;&nbsp; <sup>2</sup>Max Planck Institute - Intelligent Systems &nbsp;&nbsp; <sup>3</sup>University of Tübingen
         </div>
         <div class="links mt-3">
             <a href="https://arxiv.org/abs/2507.18809" class="btn btn-dark" target="_blank">
