@@ -33,18 +33,22 @@ img: assets/img/publication_preview/RILe.jpg
 </div>
 <hr>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row justify-content-center">
+    <div class="col-md-10">
         {% include figure.liquid loading="eager" path="assets/img/publication_preview/RILeOverview.png" title="Overview of RL, IRL, GAIL/AIRL, and RILe" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    <b>(a) Reinforcement Learning (RL):</b> Learning a policy that maximizes a hand-defined reward function. <b>(b) Inverse RL (IRL):</b> Learning a reward function from expert data. This involves an iterative loop: 1. train a policy on the current reward function, and 2. update the reward function by comparing the policy with data. <b>(c) GAIL & AIRL:</b> Using a discriminator as a reward function. The policy is trained to fool the discriminator. AIRL introduces a specific structure (green terms) to disentangle the reward from environment dynamics. <b>(D) RILe:</b> Learning a reward function simultaneously with the policy. A trainer agent learns to generate rewards for the student agent.
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="caption">
+            <b>(a) Reinforcement Learning (RL):</b> Learning a policy that maximizes a hand-defined reward function. <b>(b) Inverse RL (IRL):</b> Learning a reward function from expert data. This involves an iterative loop: 1. train a policy on the current reward function, and 2. update the reward function by comparing the policy with data. <b>(c) GAIL & AIRL:</b> Using a discriminator as a reward function. The policy is trained to fool the discriminator. AIRL introduces a specific structure (green terms) to disentangle the reward from environment dynamics. <b>(D) RILe:</b> Learning a reward function simultaneously with the policy. A trainer agent learns to generate rewards for the student agent.
+        </div>
+    </div>
 </div>
 
 <section class="section">
     <div class="row"> 
-        <div class="col-md-12"> 
+        <div class="col-md-10 offset-md-1"> 
             <h2 class="title is-3">Abstract</h2> 
             <div class="content"> 
                 <p>
@@ -57,21 +61,29 @@ img: assets/img/publication_preview/RILe.jpg
 
 <section class="section">
     <div class="row"> 
-        <div class="col-md-12"> 
+        <div class="col-md-10 offset-md-1"> 
             <h2 class="title is-3">Method</h2> 
             <div class="content"> 
                 <p>
                 We propose <b>Reinforced Imitation Learning (RILe)</b> to jointly learn a reward function and a policy that emulates expert-like behavior within a single learning process. RILe introduces a novel trainer-student dynamic, as illustrated in Figure 2. The student agent learns an action policy by interacting with the environment, while the trainer agent learns a reward function to guide the student. Both agents are trained simultaneously using reinforcement learning, with feedback from an adversarial discriminator.
                 </p>
             </div>
-            <div class="row">
-                <div class="col-sm mt-3 mt-md-0">
-                    {% include figure.liquid loading="eager" path="assets/img/publication_preview/RILecopy.jpg" title="RILe Framework" class="img-fluid rounded z-depth-1" %}
-                </div>
-            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            {% include figure.liquid loading="eager" path="assets/img/publication_preview/RILecopy.jpg" title="RILe Framework" class="img-fluid rounded z-depth-1" %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
             <div class="caption">
                 <b>Reinforced Imitation Learning (RILe)</b>. The framework consists of a student, trainer, and discriminator. (1-2) The student policy $\pi_{S}$ interacts with the environment. (3) The student's state-action pair $(s^{S},a^{S})$ becomes the trainer's observation. (4) The trainer's policy $\pi_{T}$ outputs an action $a^{T}$, which serves as the student's reward $(r^{S}=a^{T})$. (5-6) The discriminator receives both student and expert data. (7) The discriminator then provides a reward to the trainer based on the similarity between the student and expert data.
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
             <div class="content">
                 <h3 class="mt-4">Framework Components</h3>
                 <p>
@@ -88,7 +100,7 @@ img: assets/img/publication_preview/RILe.jpg
 
 <section class="section">
     <div class="row"> 
-        <div class="col-md-12"> 
+        <div class="col-md-10 offset-md-1"> 
             <h2 class="title is-3">Results</h2> 
             <div class="content"> 
                 <p>
