@@ -108,20 +108,14 @@ img: assets/img/publication_preview/NIL.jpg
             <p class="text-center">
             NIL successfully learns locomotion for various robots, including humanoids and quadrupeds. Crucially, NIL achieves this without any expert motion data, yet it outperforms state-of-the-art methods that are trained on 25 curated 3D motion-capture demonstrations. Below, we compare NIL (trained on generated video) to AMP (trained on 3D MoCap data).
             </p>
-            <div class="row">
-                <div class="col-md-10">
-                    <h5 class="text-center">Unitree H1 Humanoid and Unitree A1 Quadruped</h5>
-                    <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="/assets/video/results1.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="col-md-10 mt-4">
-                    <h5 class="text-center">Unitree H1 Humanoid and Talos Humanoid</h5>
-                    <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="/assets/video/results2.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
+            <h5 class="text-center mt-4">Unitree H1 Humanoid and Unitree A1 Quadruped</h5>
+            <video controls preload="metadata" class="img-fluid rounded z-depth-1">
+                <source src="/assets/video/results1.mp4" type="video/mp4">
+            </video>
+            <h5 class="text-center mt-4">Unitree H1 Humanoid and Talos Humanoid</h5>
+            <video controls preload="metadata" class="img-fluid rounded z-depth-1">
+                <source src="/assets/video/results2.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
     <div class="row justify-content-center mt-5">
@@ -141,20 +135,14 @@ img: assets/img/publication_preview/NIL.jpg
             <p class="text-center">
             The performance of NIL is directly linked to the quality of the underlying video diffusion model. As these models improve, NIL's ability to learn complex and natural behaviors also improves, demonstrating a promising path for future progress.
             </p>
-            <div class="row">
-                <div class="col-md-10">
-                    <h5 class="text-center">Comparison of Different Models</h5>
-                    <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="/assets/video/videomodels.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="col-md-10 mt-4">
-                    <h5 class="text-center">Effect of Model Improvements</h5>
-                    <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="/assets/video/videomodelimprovements.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
+            <h5 class="text-center mt-4">Comparison of Different Models</h5>
+            <video controls preload="metadata" class="img-fluid rounded z-depth-1">
+                <source src="/assets/video/videomodels.mp4" type="video/mp4">
+            </video>
+            <h5 class="text-center mt-4">Effect of Model Improvements</h5>
+            <video controls preload="metadata" class="img-fluid rounded z-depth-1">
+                <source src="/assets/video/videomodelimprovements.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
 </section>

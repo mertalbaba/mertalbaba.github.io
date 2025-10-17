@@ -247,7 +247,9 @@ ul.task-list input[type="checkbox"] {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
-  opacity: 1;
+  opacity: 0.85;
+  // backdrop-filter: blur(10px);
+  // -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar .dropdown-menu {
