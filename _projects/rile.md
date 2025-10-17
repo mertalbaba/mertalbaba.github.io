@@ -95,7 +95,7 @@ img: assets/img/publication_preview/RILe.jpg
     </p>
     <div class="row">
         <div class="col-sm mt-3 mt-md-0">
-            {% include figure.liquid loading="eager" path="assets/img/publication_preview/table1.jpg" title="Table 1: Performance in Continuous Control" class="img-fluid rounded z-depth-1" %}
+            {% include figure.liquid loading="eager" path="assets/img/publication_preview/table1.png" title="Table 1: Performance in Continuous Control" class="img-fluid rounded z-depth-1" %}
         </div>
     </div>
     <div class="caption">
@@ -131,11 +131,11 @@ img: assets/img/publication_preview/RILe.jpg
     </p>
     <div class="row">
         <div class="col-sm mt-3 mt-md-0">
-            {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure6.jpg" title="Figure 6: Impact of an Advanced Discriminator" class="img-fluid rounded z-depth-1" %}
+            {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure6.png" title="Figure 6: Impact of an Advanced Discriminator" class="img-fluid rounded z-depth-1" %}
         </div>
     </div>
     <div class="caption">
-        <b>Figure 6: Impact of an Advanced Discriminator.</b> Plots (a-c) show reward dynamics (volatility and performance correlation). Plot (d) compares final performance. RILe effectively uses the advanced (DRAIL) discriminator to improve performance, while GAIL does not.
+        <b>Figure 6: Impact of an Advanced Discriminator.</b> Plots (a-c) analyze reward dynamics, and (d) compares final performance. <b>(a) RFDC (Reward Function Distribution Change):</b> Measures the overall volatility of the reward function. <b>(b) FS-RFDC (Fixed-State RFDC):</b> Measures reward volatility on a fixed set of expert data. <b>(c) CPR (Correlation between Performance and Reward):</b> Measures how well reward improvements align with gains in student performance. RILe effectively uses the advanced (DRAIL) discriminator to improve performance, while GAIL does not.
     </div>
 </section>
 

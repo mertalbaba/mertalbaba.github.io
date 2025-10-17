@@ -44,7 +44,7 @@ img: assets/img/publication_preview/NIL.jpg
         <h3 class="text-center" style="margin-bottom: 1rem;">We teach robots to move by showing them AI-generated videos, with no need for real-world motion data.</h3>
         <div id="video">
             <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                <source src="../../assets/videos/nil.mp4" type="video/mp4">
+                <source src="../../assets/video/nil.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -113,13 +113,13 @@ img: assets/img/publication_preview/NIL.jpg
                 <div class="col-md-12">
                     <h5 class="text-center">Unitree H1 Humanoid and Unitree A1 Quadruped</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="../../assets/videos/results1.mp4" type="video/mp4">
+                        <source src="../../assets/video/results1.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="col-md-12 mt-4">
                     <h5 class="text-center">Unitree H1 Humanoid and Talos Humanoid</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="../../assets/videos/results2.mp4" type="video/mp4">
+                        <source src="../../assets/video/results2.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -132,7 +132,7 @@ img: assets/img/publication_preview/NIL.jpg
             Our reward function combines video similarity, IoU similarity, and regularization. Removing any component degrades performance, leading to jittery, distorted, or suboptimal motion. Using all components together produces a stable and natural walking gait.
             </p>
             <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                <source src="../../assets/videos/rewardfunctioncomps.mp4" type="video/mp4">
+                <source src="../../assets/video/rewardfunctioncomps.mp4" type="video/mp4">
             </video>
         </div>
     </div>
@@ -146,13 +146,13 @@ img: assets/img/publication_preview/NIL.jpg
                 <div class="col-md-12">
                     <h5 class="text-center">Comparison of Different Models</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="../../assets/videos/videomodels.mp4" type="video/mp4">
+                        <source src="../../assets/video/videomodels.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="col-md-12 mt-4">
                     <h5 class="text-center">Effect of Model Improvements</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="../../assets/videos/videomodelimprovements.mp4" type="video/mp4">
+                        <source src="../../assets/video/videomodelimprovements.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -160,12 +160,10 @@ img: assets/img/publication_preview/NIL.jpg
     </div>
 </section>
 
-<hr>
 <section class="section" id="BibTeX">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <h2 class="title is-3 text-center">BibTeX</h2>
-            <pre><code>@misc{albaba2025nilnodataimitationlearning,
+    <div class="is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{albaba2025nilnodataimitationlearning,
       title={NIL: No-data Imitation Learning by Leveraging Pre-trained Video Diffusion Models}, 
       author={Mert Albaba and Chenhao Li and Markos Diomataris and Omid Taheri and Andreas Krause and Michael Black},
       year={2025},
@@ -173,7 +171,6 @@ img: assets/img/publication_preview/NIL.jpg
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2503.10626}, 
-}</code></pre>
-        </div>
+    }</code></pre>
     </div>
 </section>
