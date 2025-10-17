@@ -107,7 +107,7 @@ img: assets/img/publication_preview/RILe.jpg
     </p>
     <div class="row">
         <div class="col-sm mt-3 mt-md-0">
-            {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure4.png" title="Figure 4: Reward Function Comparison" class="img-fluid rounded z-depth-1" %}
+            {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure4.jpg" title="Figure 4: Reward Function Comparison" class="img-fluid rounded z-depth-1" %}
         </div>
     </div>
     <div class="caption">
@@ -119,7 +119,7 @@ img: assets/img/publication_preview/RILe.jpg
     </p>
     <div class="row">
         <div class="col-sm mt-3 mt-md-0">
-            {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure5.png" title="Figure 5: Comparison of Computational Cost" class="img-fluid rounded z-depth-1" %}
+            {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure5.jpg" title="Figure 5: Comparison of Computational Cost" class="img-fluid rounded z-depth-1" %}
         </div>
     </div>
     <div class="caption">
@@ -131,7 +131,7 @@ img: assets/img/publication_preview/RILe.jpg
     </p>
     <div class="row">
         <div class="col-sm mt-3 mt-md-0">
-            {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure6.png" title="Figure 6: Impact of an Advanced Discriminator" class="img-fluid rounded z-depth-1" %}
+            {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure6.jpg" title="Figure 6: Impact of an Advanced Discriminator" class="img-fluid rounded z-depth-1" %}
         </div>
     </div>
     <div class="caption">
