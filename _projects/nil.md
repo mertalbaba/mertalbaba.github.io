@@ -159,7 +159,6 @@ img: assets/img/publication_preview/NIL.jpg
         </div>
     </div>
 </section>
-
 <section class="section" id="BibTeX">
     <div class="is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -173,4 +172,4 @@ img: assets/img/publication_preview/NIL.jpg
       url={https://arxiv.org/abs/2503.10626}, 
     }</code></pre>
     </div>
-</section>
+</section> 
