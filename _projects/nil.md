@@ -71,11 +71,13 @@ img: assets/img/publication_preview/NIL.jpg
             <h2 class="title is-3 text-center">Method</h2>
         </div>
     </div>
-    <div class="row align-items-center">
-        <div class="col-md-6">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
             {% include figure.liquid loading="eager" path="assets/img/publication_preview/NIL_method.jpg" title="NIL Method" class="img-fluid rounded z-depth-1" %}
         </div>
-        <div class="col-md-6">
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-10 offset-md-1">
             <p>
             <b>No-data Imitation Learning (NIL)</b> learns physically plausible 3D motor skills from 2D videos generated on-the-fly. The process has two stages:
             </p>
@@ -108,16 +110,16 @@ img: assets/img/publication_preview/NIL.jpg
             NIL successfully learns locomotion for various robots, including humanoids and quadrupeds. Crucially, NIL achieves this without any expert motion data, yet it outperforms state-of-the-art methods that are trained on 25 curated 3D motion-capture demonstrations. Below, we compare NIL (trained on generated video) to AMP (trained on 3D MoCap data).
             </p>
             <div class="row">
-                <div class="col-md-6">
-                    <h5 class="text-center">Unitree H1 Humanoid</h5>
+                <div class="col-md-12">
+                    <h5 class="text-center">Unitree H1 Humanoid and Unitree A1 Quadruped</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="assets/videos/baseline_comparison_h1.mp4" type="video/mp4">
+                        <source src="assets/videos/results1.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="col-md-6">
-                    <h5 class="text-center">Unitree A1 Quadruped</h5>
+                <div class="col-md-12 mt-4">
+                    <h5 class="text-center">>Unitree H1 Humanoid and Talos Humanoid</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="assets/videos/baseline_comparison_a1.mp4" type="video/mp4">
+                        <source src="assets/videos/results2.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -130,7 +132,7 @@ img: assets/img/publication_preview/NIL.jpg
             Our reward function combines video similarity, IoU similarity, and regularization. Removing any component degrades performance, leading to jittery, distorted, or suboptimal motion. Using all components together produces a stable and natural walking gait.
             </p>
             <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                <source src="assets/videos/reward_ablation.mp4" type="video/mp4">
+                <source src="assets/videos/rewardfunctioncomps.mp4" type="video/mp4">
             </video>
         </div>
     </div>
@@ -144,13 +146,13 @@ img: assets/img/publication_preview/NIL.jpg
                 <div class="col-md-6">
                     <h5 class="text-center">Comparison of Different Models</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="assets/videos/model_comparison.mp4" type="video/mp4">
+                        <source src="assets/videos/videomodels.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="col-md-6">
                     <h5 class="text-center">Effect of Model Improvements</h5>
                     <video controls preload="metadata" class="img-fluid rounded z-depth-1">
-                        <source src="assets/videos/model_improvements.mp4" type="video/mp4">
+                        <source src="assets/videos/videomodelimprovements.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
