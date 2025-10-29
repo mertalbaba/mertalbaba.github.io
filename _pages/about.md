@@ -25,7 +25,7 @@ social: true # includes social icons at the bottom of the page
 </script>
 
 ## bio
-I am a PhD student at [ETH Zürich](https://ethz.ch) and the [Max Planck Institute – Perceiving Systems](https://ps.is.mpg.de/), co-advised by [Michael Black](https://ps.is.mpg.de/person/black) and [Andreas Krause](https://las.inf.ethz.ch/people/krausea/). My primary research interests span **imitation learning**, **diffusion models** and **VLMs**. I am especially excited about creating **generative methods** that enable robots to learn human skills from videos. I am an [ELLIS PhD Student](https://ellis.eu/phd-postdoc) and a [CLS Fellow](https://learning-systems.org/phds).
+I am a PhD student at [ETH Zürich](https://ethz.ch) and the [Max Planck Institute – Perceiving Systems](https://ps.is.mpg.de/), co-advised by [Michael Black](https://ps.is.mpg.de/person/black) and [Andreas Krause](https://las.inf.ethz.ch/people/krausea/). My primary research interests span **reinforcement learning**, **imitation learning**, **robotics**, **diffusion models** and **VLMs**. I am especially excited about creating generative ways that enable humanoid agents to learn wide range of skills autonomously. I am an [ELLIS PhD Student](https://ellis.eu/phd-postdoc) and a [CLS Fellow](https://learning-systems.org/phds).
 
 I previously spent a year at USC, earned my MSc in Mechanical Engineering at Bilkent University under the supervision of [Yildiray Yildiz](https://yildirayyildiz.com/about/), and completed my BSc in Electrical and Computer Engineering at Bilkent University. <br>
 
@@ -34,7 +34,11 @@ I previously spent a year at USC, earned my MSc in Mechanical Engineering at Bil
 <br>
 
 ## research
-My primary focus is on **generative imitation learning**: integrating ideas from **video diffusion models**, **imitation learning**, and **VLMs** to create methods that can accurately mimic human skills in a generative way. I’m particularly interested in **both**  **robotics** and **realistic avatar animation** (e.g., character simulation). Ultimately, I aim to enable humanoid agents —virtual or physical— to master a wide range of tasks by learning from just a handful of demonstrations or even from raw video data alone.
+*How can we enable robots and physical characters autonomously acquire new skills?* I develop multimodal imitation learning approaches that combine (inverse) reinforcement learning, vision language models (VLMs), and vision transformers. Ultimately, I aim to enable humanoid agents, virtual or physical, to master a wide range of tasks by learning from just a handful of demonstrations or even from raw generated data alone. I’m particularly interested in **both** **robotics** and **realistic avatar animation** (e.g., character simulation).
+
+In addition to my work in generative imitation learning, I have **7+ years** of experience in **reinforcement learning** and **imitation learning** to model human behavior in multi-agent settings. I also remain interested in multi-agent settings, where game-theoretic principles can enhance both **reinforcement** and **imitation learning**.
+
+<!-- My primary focus is on **generative imitation learning**: integrating ideas from **video diffusion models**, **imitation learning**, and **VLMs** to create methods that can accurately mimic human skills in a generative way. I’m particularly interested in **both**  **robotics** and **realistic avatar animation** (e.g., character simulation). Ultimately, I aim to enable humanoid agents —virtual or physical— to master a wide range of tasks by learning from just a handful of demonstrations or even from raw video data alone.
 
 In addition to my work in generative imitation learning, I have **five years** of experience applying **reinforcement learning** and **game theory** to model human behavior in autonomous driving. I remain strongly interested in multi-agent systems, where game-theoretic principles can enhance both **reinforcement** and **imitation learning**.
 
