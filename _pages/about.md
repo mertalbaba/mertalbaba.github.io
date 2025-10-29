@@ -34,7 +34,7 @@ I previously spent a year at USC, earned my MSc in Mechanical Engineering at Bil
 <br>
 
 ## research
-*How can we enable robots and physical characters autonomously acquire new skills?* I develop multimodal imitation learning approaches that combine (inverse) reinforcement learning, vision language models (VLMs), and vision transformers. Ultimately, I aim to enable humanoid agents, virtual or physical, to master a wide range of tasks by learning from just a handful of demonstrations or even from raw generated data alone. I’m particularly interested in **both** **robotics** and **realistic avatar animation** (e.g., character simulation).
+*How can we enable robots and physical characters autonomously acquire new skills?* I develop multimodal imitation learning approaches that **combine (inverse) reinforcement learning**, **vision language models (VLMs)**, and **pretrained generative models**. Ultimately, I aim to enable humanoid agents, virtual or physical, to master a wide range of tasks by learning from just a handful of demonstrations or even from generated data alone. I’m particularly interested in both **robotics** and **realistic avatar animation** (e.g., character simulation).
 
 In addition to my work in generative imitation learning, I have **7+ years** of experience in **reinforcement learning** and **imitation learning** to model human behavior in multi-agent settings. I also remain interested in multi-agent settings, where game-theoretic principles can enhance both **reinforcement** and **imitation learning**.
 
