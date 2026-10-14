@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#222a35">
+  <title>Original layout, updated · Mert Albaba</title>
+  <link rel="icon" href="{{ '/assets/img/monogram.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="preload" href="{{ '/assets/fonts/AspektaVF.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/original-dark.css' | relative_url }}">
+  <script defer src="{{ '/assets/js/portfolio.js' | relative_url }}"></script>
+</head>
+<body class="original-dark fixed-top-nav sticky-bottom-footer" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="original-header">
+    <div class="container original-nav-inner">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true">+</span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#bio" aria-current="page">about</a>
+        <a href="#research">research</a>
+        <a href="#selected-publications">publications</a>
+        <a href="{{ '/art_creations/' | relative_url }}">photography &amp; drawings</a>
+        <a href="{{ '/cv/' | relative_url }}">CV</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container original-main" id="main">
+    <div class="preview-note"><span>Original layout · dark preview</span><a href="{{ '/' | relative_url }}">Compare with the redesign →</a></div>
+    <div class="post">
+      <header class="post-header">
+        <h1 class="post-title"><strong>Mert</strong> Albaba</h1>
+        <p class="desc">PhD Student in Robotics and Reinforcement Learning</p>
+      </header>
+      <article>
+        <div class="profile float-right"><img src="{{ '/assets/img/research/portrait.jpg' | relative_url }}" alt="Mert Albaba" width="689" height="778" fetchpriority="high"></div>
+        <div class="clearfix">{{ content }}</div>
+        <section class="original-publications" id="selected-publications" aria-labelledby="publications-title">
+          <h2 id="publications-title">selected publications</h2>
+          <div class="publications">{% bibliography --group_by none --query @*[selected=true]* %}</div>
+          <p class="all-publications"><a href="{{ '/publications/' | relative_url }}">All publications →</a></p>
+        </section>
+        <div class="social">
+          <nav class="contact-icons" aria-label="Contact and profiles">
+            <a href="mailto:{{ site.data.socials.email }}" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></a>
+            <a href="https://github.com/mertalbaba" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+          </nav>
+          <p class="contact-note">For research conversations and collaborations, get in touch by email.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer class="original-footer"><div class="container">© {{ site.time | date: '%Y' }} Mert Albaba <a href="{{ '/' | relative_url }}">View redesigned version →</a></div></footer>
+</body>
+</html>

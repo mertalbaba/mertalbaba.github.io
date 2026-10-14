@@ -1,78 +1,36 @@
 ---
 layout: page
-title: art creations
+title: Photography & drawings
 permalink: /art_creations/
-description:
+description: A selection of my photography and drawings.
 nav: true
 nav_order: 5
 ---
 
-I enjoy photography and drawing in my free time. Here is a selection of my work.
+<p>I enjoy photography and drawing in my free time.</p>
 
-## Photography
+<section aria-labelledby="photography-title">
+  <h2 class="gallery-section-title" id="photography-title">Photography</h2>
+  <div class="gallery-grid">
+    {% for index in (1..9) %}
+      {% capture image_path %}/assets/img/gallery/photos/{{ index }}.jpeg{% endcapture %}
+      {% capture thumbnail_path %}/assets/img/gallery/thumbs/photos/{{ index }}.jpg{% endcapture %}
+      <a href="{{ image_path | relative_url }}" aria-label="View photograph {{ index }} at full size">
+        <img src="{{ thumbnail_path | relative_url }}" alt="Photograph {{ index }} from Mert Albaba's collection" loading="lazy" decoding="async">
+      </a>
+    {% endfor %}
+  </div>
+</section>
 
-Here are some photos I've taken
-
-<div class="row mt-3">
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/photos/1.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/photos/2.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/photos/3.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/photos/4.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/photos/5.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/photos/6.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/photos/7.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/photos/8.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/photos/9.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-## Drawings
-
-Here are some of my art creations
-
-<div class="row mt-3">
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/drawings/1.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/drawings/2.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/drawings/3.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/drawings/4.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/drawings/5.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/drawings/6.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/drawings/7.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/drawings/8.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/gallery/drawings/9.jpeg" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+<section aria-labelledby="drawings-title">
+  <h2 class="gallery-section-title" id="drawings-title">Drawings</h2>
+  <div class="gallery-grid drawings">
+    {% for index in (1..9) %}
+      {% capture image_path %}/assets/img/gallery/drawings/{{ index }}.jpeg{% endcapture %}
+      {% capture thumbnail_path %}/assets/img/gallery/thumbs/drawings/{{ index }}.jpg{% endcapture %}
+      <a href="{{ image_path | relative_url }}" aria-label="View drawing {{ index }} at full size">
+        <img src="{{ thumbnail_path | relative_url }}" alt="Drawing {{ index }} from Mert Albaba's collection" loading="lazy" decoding="async">
+      </a>
+    {% endfor %}
+  </div>
+</section>

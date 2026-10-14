@@ -1,7 +1,7 @@
 ---
 layout: page
 title: GC-TTT - Test-time Offline Reinforcement Learning on Goal-related Experience
-# description: Overview of the RILe project combining imitation and inverse reinforcement learning.
+description: "ICML 2026 — test-time improvement of goal-conditioned policies using offline experience."
 img: assets/img/publication_preview/GCTTT.png
 ---
 
@@ -27,9 +27,13 @@ img: assets/img/publication_preview/GCTTT.png
         <div class="affiliations mt-2">
             <sup>1</sup>ETH Zürich &nbsp;&nbsp; <sup>2</sup>Max Planck Institute - Intelligent Systems &nbsp;&nbsp; <sup>3</sup>University of Tübingen
         </div>
+        <p class="mt-3 mb-1"><strong>ICML 2026</strong> · PMLR 306:5200–5218</p>
         <div class="links mt-3">
-            <a href="https://arxiv.org/abs/2507.18809" class="btn btn-dark" target="_blank">
-                <i class="fas fa-file-pdf"></i> Paper
+            <a href="https://proceedings.mlr.press/v306/bagatella26a.html" class="btn btn-dark" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-file-pdf"></i> Proceedings
+            </a>
+            <a href="https://arxiv.org/abs/2507.18809" class="btn btn-dark" target="_blank" rel="noopener noreferrer">
+                arXiv
             </a>
         </div>
     </div>
@@ -135,7 +139,7 @@ img: assets/img/publication_preview/GCTTT.png
     </div>
     <div class="row">
         <div class="col-md-10 offset-md-1">
-            {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure6gcttt.jpg" title="Ablation Studies Figure" class="img-fluid rounded z-depth-1" %}
+            {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure6gcttt.png" title="Ablation Studies Figure" class="img-fluid rounded z-depth-1" %}
         </div>
     </div>
     <div class="row">
@@ -152,14 +156,16 @@ img: assets/img/publication_preview/GCTTT.png
 <section class="section" id="BibTeX">
     <div class="is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{bagatella2025testtime,
-      title={Test-time Offline Reinforcement Learning on Goal-related Experience}, 
-      author={Marco Bagatella* and Mert Albaba* and Jonas Hübotter and Georg Martius and Andreas Krause},
-      year={2025},
-      eprint={2507.18809},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2507.18809}, 
+    <pre><code>@inproceedings{pmlr-v306-bagatella26a,
+      title={Test-time Offline Reinforcement Learning on Goal-related Experience},
+      author={Bagatella, Marco and Albaba, Mert and Hübotter, Jonas and Martius, Georg and Krause, Andreas},
+      booktitle={Proceedings of the 43rd International Conference on Machine Learning},
+      pages={5200--5218},
+      year={2026},
+      volume={306},
+      series={Proceedings of Machine Learning Research},
+      publisher={PMLR},
+      url={https://proceedings.mlr.press/v306/bagatella26a.html}
     }</code></pre>
     </div>
 </section>

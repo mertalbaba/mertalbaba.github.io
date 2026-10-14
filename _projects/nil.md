@@ -1,7 +1,7 @@
 ---
 layout: page
-title: NIL - No-data Imitation Learning
-description:
+title: "NIL: No-data Imitation Learning"
+description: "CVPR 2026 — learning motor skills from generated video."
 img: assets/img/publication_preview/NIL.jpg
 # importance: 1
 # category: work
@@ -28,9 +28,14 @@ img: assets/img/publication_preview/NIL.jpg
         <div class="affiliations mt-2">
             <sup>1</sup>ETH Zürich &nbsp;&nbsp; <sup>2</sup>Max Planck Institute for Intelligent Systems
         </div>
+        <p class="mt-3 mb-1"><strong>CVPR 2026</strong></p>
+        <p class="mb-3">Spotlight talk at the 2nd Workshop on Agents in Interaction, from Humans to Robots.</p>
         <div class="links mt-3">
             <a href="https://arxiv.org/abs/2503.10626" class="btn btn-dark" target="_blank" rel="noopener noreferrer">
                 <i class="fas fa-file-pdf"></i> Paper
+            </a>
+            <a href="https://nil.is.tue.mpg.de/" class="btn btn-dark" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-globe"></i> Project website
             </a>
             <a href="#video" class="btn btn-dark"> <i class="fas fa-video"></i> Video </a>
         </div>
@@ -149,14 +154,13 @@ img: assets/img/publication_preview/NIL.jpg
 <section class="section" id="BibTeX">
     <div class="is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{albaba2025nilnodataimitationlearning,
-      title={NIL: No-data Imitation Learning by Leveraging Pre-trained Video Diffusion Models}, 
-      author={Mert Albaba and Chenhao Li and Markos Diomataris and Omid Taheri and Andreas Krause and Michael Black},
-      year={2025},
-      eprint={2503.10626},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2503.10626}, 
+    <pre><code>@inproceedings{albaba2026nil,
+      title={NIL: No-data Imitation Learning},
+      author={Mert Albaba and Chenhao Li and Markos Diomataris and Omid Taheri and Andreas Krause and Michael J. Black},
+      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+      pages={20823--20833},
+      year={2026},
+      url={https://nil.is.tue.mpg.de/}
     }</code></pre>
     </div>
-</section> 
+</section>

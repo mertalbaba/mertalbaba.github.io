@@ -1,19 +1,14 @@
 ---
 layout: page
-title: cv
+title: CV
+description: Curriculum vitae.
 nav: true
 nav_order: 8
 permalink: /cv/
 ---
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BNK4466BFB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<p>I am a PhD student at ETH Zürich and the Max Planck Institute for Intelligent Systems, currently interning at Meta in London on world action models and self-supervised learning. Previously, I interned at Vesoma with Martin Riedmiller.</p>
 
-  gtag('config', 'G-BNK4466BFB');
-</script>
+<p class="project-links"><a href="{{ '/assets/pdf/CV.pdf' | relative_url }}" download>Download my CV <span aria-hidden="true">↓</span></a><a href="{{ '/assets/pdf/CV.pdf' | relative_url }}">Open PDF <span aria-hidden="true">↗</span></a></p>
 
-<iframe src="/assets/pdf/CV.pdf" width="100%" height="1200px"></iframe>
+<iframe class="cv-frame" src="{{ '/assets/pdf/CV.pdf' | relative_url }}" title="Mert Albaba's curriculum vitae" loading="lazy"></iframe>

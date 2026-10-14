@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RILe - Reinforced Imitation Learning
-# description: Overview of the RILe project combining imitation and inverse reinforcement learning.
+description: "Poster at the ICLR 2025 Robot Learning Workshop — learning adaptive rewards for imitation."
 img: assets/img/publication_preview/RILe.jpg
 ---
 
@@ -24,9 +24,14 @@ img: assets/img/publication_preview/RILe.jpg
         <div class="affiliations mt-2">
             <sup>1</sup>ETH Zürich &nbsp;&nbsp; <sup>2</sup>Max Planck Institute - Intelligent Systems
         </div>
+        <p class="mt-3 mb-1"><strong>ICLR 2025 Robot Learning Workshop · Poster</strong></p>
+        <p class="mb-3">7th Robot Learning Workshop: Towards Robots with Human-Level Abilities. Non-archival workshop paper.</p>
         <div class="links mt-3">
-            <a href="https://arxiv.org/abs/2406.08472" class="btn btn-dark" target="_blank">
-                <i class="fas fa-file-pdf"></i> Paper
+            <a href="https://arxiv.org/abs/2406.08472" class="btn btn-dark" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-file-pdf"></i> arXiv
+            </a>
+            <a href="https://openreview.net/forum?id=DjxXGzDZyF" class="btn btn-dark" target="_blank" rel="noopener noreferrer">
+                Workshop paper
             </a>
         </div>
     </div>
@@ -113,7 +118,7 @@ img: assets/img/publication_preview/RILe.jpg
             </p>
             <div class="row">
                 <div class="col-sm mt-3 mt-md-0">
-                    {% include figure.liquid loading="eager" path="assets/img/publication_preview/table1.jpg" title="Table 1: Performance in Continuous Control" class="img-fluid rounded z-depth-1" %}
+                    {% include figure.liquid loading="eager" path="assets/img/publication_preview/table1.png" title="Table 1: Performance in Continuous Control" class="img-fluid rounded z-depth-1" %}
                 </div>
             </div>
             <div class="caption">
@@ -125,7 +130,7 @@ img: assets/img/publication_preview/RILe.jpg
             </p>
             <div class="row">
                 <div class="col-sm mt-3 mt-md-0">
-                    {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure4.png" title="Figure 4: Reward Function Comparison" class="img-fluid rounded z-depth-1" %}
+                    {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure4.jpg" title="Figure 4: Reward Function Comparison" class="img-fluid rounded z-depth-1" %}
                 </div>
             </div>
             <div class="caption">
@@ -137,7 +142,7 @@ img: assets/img/publication_preview/RILe.jpg
             </p>
             <div class="row">
                 <div class="col-sm mt-3 mt-md-0">
-                    {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure5.png" title="Figure 5: Comparison of Computational Cost" class="img-fluid rounded z-depth-1" %}
+                    {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure5.jpg" title="Figure 5: Comparison of Computational Cost" class="img-fluid rounded z-depth-1" %}
                 </div>
             </div>
             <div class="caption">
@@ -149,7 +154,7 @@ img: assets/img/publication_preview/RILe.jpg
             </p>
             <div class="row">
                 <div class="col-sm mt-3 mt-md-0">
-                    {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure6.png" title="Figure 6: Impact of an Advanced Discriminator" class="img-fluid rounded z-depth-1" %}
+                    {% include figure.liquid loading="eager" path="assets/img/publication_preview/figure6.jpg" title="Figure 6: Impact of an Advanced Discriminator" class="img-fluid rounded z-depth-1" %}
                 </div>
             </div>
             <div class="caption">
@@ -162,11 +167,12 @@ img: assets/img/publication_preview/RILe.jpg
     <h2 class="title">BibTeX</h2>
     <pre><code>@misc{albaba2025rilereinforcedimitationlearning,
       title={RILe: Reinforced Imitation Learning}, 
-      author={Mert Albaba and Sammy Christen and Thomas Langarek and Christoph Gebhardt and Otmar Hilliges and Michael J. Black},
+      author={Mert Albaba and Sammy Christen and Thomas Langerak and Christoph Gebhardt and Otmar Hilliges and Michael J. Black},
       year={2025},
       eprint={2406.08472},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
+      note={Poster at the 7th Robot Learning Workshop: Towards Robots with Human-Level Abilities, ICLR 2025 (non-archival)},
       url={https://arxiv.org/abs/2406.08472}, 
     }</code></pre>
     </div>
