@@ -3,36 +3,36 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "about",
+    id: "nav-mert-albaba",
+    title: "Mert Albaba",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-projects",
-          title: "projects",
-          description: "selected research projects",
+  },{id: "nav-research",
+          title: "Research",
+          description: "Selected projects in robotics and reinforcement learning.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-publications",
-          title: "publications",
-          description: "",
+          title: "Publications",
+          description: "Papers and ongoing work in robotics and reinforcement learning.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-art-creations",
-          title: "art creations",
-          description: "",
+        },{id: "nav-photography-amp-drawings",
+          title: "Photography &amp; drawings",
+          description: "A selection of my photography and drawings.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/art_creations/";
           },
         },{id: "nav-cv",
-          title: "cv",
-          description: "",
+          title: "CV",
+          description: "Curriculum vitae.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -61,17 +61,17 @@ ninja.data = [{
       },
     },{id: "projects-gc-ttt-test-time-offline-reinforcement-learning-on-goal-related-experience",
           title: 'GC-TTT - Test-time Offline Reinforcement Learning on Goal-related Experience',
-          description: "",
+          description: "ICML 2026 — test-time improvement of goal-conditioned policies using offline experience.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/gcttt/";
             },},{id: "projects-nil-no-data-imitation-learning",
-          title: 'NIL - No-data Imitation Learning',
-          description: "",
+          title: 'NIL: No-data Imitation Learning',
+          description: "CVPR 2026 — learning motor skills from generated video.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/nil/";
             },},{id: "projects-rile-reinforced-imitation-learning",
           title: 'RILe - Reinforced Imitation Learning',
-          description: "",
+          description: "Poster at the ICLR 2025 Robot Learning Workshop — learning adaptive rewards for imitation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/rile/";
             },},{
@@ -79,7 +79,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%6D%65%72%74%61%6C%62%61%62%61 %61%74 %67%6D%61%69%6C %64%6F%74 %63%6F%6D", "_blank");
+          window.open("mailto:%6D%65%72%74%61%6C%62%61%62%61@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
         id: 'social-linkedin',
