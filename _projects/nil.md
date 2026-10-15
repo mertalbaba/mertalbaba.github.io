@@ -29,7 +29,7 @@ img: assets/img/publication_preview/NIL.jpg
             <sup>1</sup>ETH Zürich &nbsp;&nbsp; <sup>2</sup>Max Planck Institute for Intelligent Systems
         </div>
         <p class="mt-3 mb-1"><strong>CVPR 2026</strong></p>
-        <p class="mb-3">Spotlight talk at the 2nd Workshop on Agents in Interaction, from Humans to Robots.</p>
+        <p class="mb-3">Also presented as a spotlight talk at the 2nd Workshop on Agents in Interaction, from Humans to Robots.</p>
         <div class="links mt-3">
             <a href="https://arxiv.org/abs/2503.10626" class="btn btn-dark" target="_blank" rel="noopener noreferrer">
                 <i class="fas fa-file-pdf"></i> Paper

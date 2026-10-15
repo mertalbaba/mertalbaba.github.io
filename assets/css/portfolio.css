@@ -69,7 +69,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .text-link { font-size: 15px; white-space: nowrap; }
 .research-feature { display: grid; grid-template-columns: 255px minmax(0, 1fr); gap: 34px; align-items: start; padding-block: 30px; border-bottom: 1px solid var(--line); }
 .research-feature:first-of-type { padding-top: 0; }
-.research-media { display: block; position: relative; width: 100%; aspect-ratio: 1.4; background: var(--pale); overflow: hidden; border-radius: 8px; }
+.research-media { display: block; position: relative; width: 100%; aspect-ratio: 1.4; background: #fff; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; }
 .research-media video, .research-media img { width: 100%; height: 100%; object-fit: cover; }
 .research-media video { object-position: 56% 50%; }
 .video-toggle { position: absolute; bottom: 7px; right: 7px; background: rgba(38, 38, 38, .93); border: 1px solid #888883; border-radius: 2px; color: #f5f5f3; padding: 3px 7px; font-size: 12px; }
@@ -84,8 +84,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .project-links a { color: var(--link); }
 .project-links span { margin-left: 3px; }
 .ongoing-feature { align-items: center; }
-.ongoing-placeholder { height: 94px; aspect-ratio: auto; display: flex; align-items: center; justify-content: center; background: #f4f4f2; color: #777773; font-size: 14px; border: 1px solid #e0e0dc; }
-.nil-media { background: #f4f4f2; }
+.ongoing-placeholder { height: 94px; aspect-ratio: auto; display: flex; align-items: center; justify-content: center; background: #fff; color: #777773; font-size: 14px; border: 1px solid #e0e0dc; }
+.nil-media { background: #fff; }
 .nil-media img, .method-media img { object-fit: contain; padding: 5px; }
 .method-media { background: #fff; }
 .research-copy .talk-note { color: #5d5d58; font-size: 14px; }
@@ -114,7 +114,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .publications h2.bibliography { font-size: 23px; font-weight: 500; margin: 34px 0 16px; }
 .publications ol.bibliography { margin: 0; padding: 0; list-style: none; }
 .publication-entry { display: grid; grid-template-columns: 145px minmax(0, 1fr); gap: 26px; padding-block: 23px; border-top: 1px solid var(--line); }
-.publication-thumb { width: 145px; height: 110px; object-fit: contain; background: #f4f4f2; padding: 5px; border-radius: 6px; }
+.publication-thumb { width: 145px; height: 110px; object-fit: contain; background: #fff; padding: 5px; border: 1px solid var(--line); border-radius: 6px; }
 .publication-title { font-size: 20px; font-weight: 500; letter-spacing: -.015em; line-height: 1.45; margin-bottom: 9px; }
 .publication-authors { font-size: 14px; line-height: 1.8; color: var(--muted); margin-bottom: 7px; }
 .publication-authors strong { color: var(--ink); }

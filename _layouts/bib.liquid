@@ -53,12 +53,12 @@
       {% elsif entry.key == 'albaba2026viola' %}
         arXiv · 2026
       {% elsif entry.key == 'bagatella2025test' %}
-        ICML 2026 · PMLR 306:5200–5218
+        ICML 2026
       {% else %}
         {% if entry.journal %}{{ entry.journal }}{% elsif entry.booktitle %}{{ entry.booktitle }}{% elsif entry.school %}{{ entry.school }}{% endif %}{% if entry.year %} · {{ entry.year }}{% endif %}
       {% endif %}
     </p>
-    {% if entry.key == 'albaba2025nil' %}<p class="talk-note">Spotlight talk · 2nd Workshop on Agents in Interaction, from Humans to Robots.</p>{% endif %}
+    {% if entry.key == 'albaba2025nil' %}<p class="talk-note">Also presented as a spotlight talk at the 2nd Workshop on Agents in Interaction, from Humans to Robots.</p>{% endif %}
     {% if entry.note %}<p>{{ entry.note }}</p>{% endif %}
     {% if page.home_publications %}
       {% assign home_summary = nil %}

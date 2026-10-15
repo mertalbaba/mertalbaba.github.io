@@ -27,7 +27,7 @@ img: assets/img/publication_preview/GCTTT.png
         <div class="affiliations mt-2">
             <sup>1</sup>ETH Zürich &nbsp;&nbsp; <sup>2</sup>Max Planck Institute - Intelligent Systems &nbsp;&nbsp; <sup>3</sup>University of Tübingen
         </div>
-        <p class="mt-3 mb-1"><strong>ICML 2026</strong> · PMLR 306:5200–5218</p>
+        <p class="mt-3 mb-1"><strong>ICML 2026</strong></p>
         <div class="links mt-3">
             <a href="https://proceedings.mlr.press/v306/bagatella26a.html" class="btn btn-dark" target="_blank" rel="noopener noreferrer">
                 <i class="fas fa-file-pdf"></i> Proceedings
